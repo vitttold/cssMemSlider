@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+
 }
 
 body {
@@ -12,32 +14,69 @@ body {
 }
 
 .slider {
-    max-width: 100%;
-    margin: 0 auto;
+    width: 650px;
+    height: 590px;
+        margin: 0 auto;
+    display: flex;
+    overflow-x: hidden;
 }
 
-.slider img {
+.slider > div {
+    scroll-snap-align: start;
+
+  }
+
+.slide {
+    width: 650px;
+    height: 100%;
+    flex-shrink: 0;
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+
+ }
+
+.slide img {
     width: 100%;
-    border: 2px solid rgb(223, 190, 99);
+    position: relative;
+    /* border: 2px solid rgb(223, 190, 99); */
+
+    animation: ani 1s linear;
+   
 }
+@keyframes ani {
+    0%{
+        left: -100%;
+      }
+    
+      100% {
+        /* transform: translateY(0); */
+        left:  0;   
+       }
+    }
+
+
 
 h3 {
     width: 65%;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
+    min-height: 50px;
+    padding-left: 2px;
 }
 
 .bottom-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .dots {
     display: flex;
     width: 25%;
     justify-content: space-between;
-    list-style: none;
+    /* align-items: center; */
+    margin-top: 12px;
+
 }
 
 .dot {
@@ -57,4 +96,9 @@ h3 {
 .dot-active {
     background: rgba(165, 127, 21, 0);
     border: 1px solid white;
+}
+
+a {
+    padding: 7px;
+    /* background-color: yellowgreen; */
 }
