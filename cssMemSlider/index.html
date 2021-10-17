@@ -8,68 +8,60 @@
     <title>cssMemSlider</title>
   </head>
   <body>
+      
     <main class="slider">
-     
-        <div id="slide-1" class="slide">
-        <div>
-          <img src="assets/01.jpg" alt="mem" />
+      <div class="slides">
+      <input type="radio" name="r" id="r1" checked >
+      <input type="radio" name="r" id="r2" >
+      <input type="radio" name="r" id="r3" >
+      <input type="radio" name="r" id="r4" > 
+
+        <div id="slide-1" class="slide s1">
+          <div>
+            <img src="assets/01.jpg" alt="mem" />
+          </div>
+          <div class="bottom-block">
+            <h3>До дедлайна по musem оставался час...</h3>
+            </div>
         </div>
-        <div class="bottom-block">
-          <h3>До дедлайна по musem оставался час...</h3>
-          <div class="dots">
-            <a href="#slide-1"><div class="dot dot-active"></div></a>
-            <a href="#slide-2"><div class="dot"></div></a>
-            <a href="#slide-3"><div class="dot"></div></a>
-            <a href="#slide-4"><div class="dot"></div></a>
+
+        <div id="slide-2" class="slide" >
+          <div>
+            <img src="assets/02.jpg" alt="mem" />
+          </div>
+          <div class="bottom-block">
+            <h3>Перед тестом Media Queries и после</h3>
+          </div>
+        </div>
+
+        <div id="slide-3" class="slide">
+          <div>
+            <img src="assets/03.jpg" alt="mem" />
+          </div>
+          <div class="bottom-block">
+            <h3>Сел за momentum, но тут пришел CSS Mem Slider</h3>
+          </div>
+        </div>
+
+        <div id="slide-4" class="slide">
+          <div>
+            <img src="assets/04.jpg" alt="mem" />
+          </div>
+          <div class="bottom-block">
+            <h3>What is the world's most popular language?</h3>
           </div>
         </div>
       </div>
-
-      <div id="slide-2" class="slide">
-        <div>
-          <img src="assets/02.jpg" alt="mem" />
-        </div>
-        <div class="bottom-block">
-          <h3>Перед тестом Media Queries и после</h3>
-          <div class="dots">
-            <a href="#slide-1"><div class="dot"></div></a>
-            <a href="#slide-2"><div class="dot dot-active"></div></a>
-            <a href="#slide-3"><div class="dot"></div></a>
-            <a href="#slide-4"><div class="dot"></div></a>
-          </div>
-        </div>
-      </div>
-
-      <div id="slide-3" class="slide">
-        <div>
-          <img src="assets/03.jpg" alt="mem" />
-        </div>
-        <div class="bottom-block">
-          <h3>Сел за momentum, но тут пришел CSS Mem Slider</h3>
-          <div class="dots">
-            <a href="#slide-1"><div class="dot"></div></a>
-            <a href="#slide-2"><div class="dot"></div></a>
-            <a href="#slide-3"><div class="dot dot-active"></div></a>
-            <a href="#slide-4"><div class="dot"></div></a>
-          </div>
-        </div>
-      </div>
-
-      <div  id="slide-4" class="slide">
-        <div>
-          <img src="assets/04.jpg" alt="mem" />
-        </div>
-        <div class="bottom-block">
-          <h3>What is the world's most popular language?</h3>
-          <div class="dots">
-            <a href="#slide-1"><div class="dot "></div></a>
-            <a href="#slide-2"><div class="dot"></div></a>
-            <a href="#slide-3"><div class="dot"></div></a>
-            <a href="#slide-4"><div class="dot dot-active"></div></a>
-          </div>
-        </div>
-      </div>
-
+      
     </main>
+   
+  <div class="buttons">
+     <label for="r1" class="bar d1"></label>
+    <label for="r2" class="bar d2"></label>
+    <label for="r3" class="bar d3"></label>
+    <label for="r4" class="bar d4"></label>
+  </div>
+    
+
   </body>
 </html>
