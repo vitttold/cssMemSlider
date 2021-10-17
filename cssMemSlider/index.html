@@ -8,13 +8,19 @@
     <title>cssMemSlider</title>
   </head>
   <body>
-      
     <main class="slider">
       <div class="slides">
-      <input type="radio" name="r" id="r1" checked >
-      <input type="radio" name="r" id="r2" >
-      <input type="radio" name="r" id="r3" >
-      <input type="radio" name="r" id="r4" > 
+        <input type="radio" name="r" id="r1" checked />
+        <input type="radio" name="r" id="r2" />
+        <input type="radio" name="r" id="r3" />
+        <input type="radio" name="r" id="r4" />
+
+        <label for="r1" class="bar d1"><a></a></label>
+        <label for="r2" class="bar d2"><a></a></label>
+        <label for="r3" class="bar d3"><a></a></label>
+        <label for="r4" class="bar d4"><a></a></label>
+
+        <div class="back"></div>
 
         <div id="slide-1" class="slide s1">
           <div>
@@ -22,10 +28,10 @@
           </div>
           <div class="bottom-block">
             <h3>До дедлайна по musem оставался час...</h3>
-            </div>
+          </div>
         </div>
 
-        <div id="slide-2" class="slide" >
+        <div id="slide-2" class="slide">
           <div>
             <img src="assets/02.jpg" alt="mem" />
           </div>
@@ -48,20 +54,23 @@
             <img src="assets/04.jpg" alt="mem" />
           </div>
           <div class="bottom-block">
-            <h3>What is the world's most popular language?</h3>
+            <h3>Примерно так выглядит css-код этой страницы</h3>
           </div>
         </div>
       </div>
+
+      <!-- <div class="buttons">
+        
+        <label for="r1" class="bar d1"></label>
+        <label for="r2" class="bar d2"></label>
+        <label for="r3" class="bar d3"></label>
+        <label for="r4" class="bar d4"></label>
+                  
+      </div> -->
+
+     
       
     </main>
    
-  <div class="buttons">
-     <label for="r1" class="bar d1"></label>
-    <label for="r2" class="bar d2"></label>
-    <label for="r3" class="bar d3"></label>
-    <label for="r4" class="bar d4"></label>
-  </div>
-    
-
   </body>
 </html>

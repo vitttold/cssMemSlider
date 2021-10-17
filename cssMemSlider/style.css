@@ -51,6 +51,8 @@ body {
     width: 100%;
     position: relative;
     border: 2px solid rgb(223, 190, 99);
+    z-index: 2;
+
 }
 
 h3 {
@@ -58,13 +60,14 @@ h3 {
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
     padding-left: 2px;
+    z-index: -1;
+
 }
 
 .bottom-block {
     display: flex;
     height: auto;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 
@@ -91,9 +94,13 @@ a {
 .buttons {
     display: flex;
     position: relative;
-    top: -65px;
-    right: 0;
+    top: -125px;
+    right: -81%;
+    background-color: rgb(93, 31, 90);
+    padding: 25px 0 50px 0 ;
+    z-index: 1;
 }
+
 
 .bar {
     width: 12px;
@@ -103,41 +110,49 @@ a {
     cursor: pointer;
     margin: 10px;
     transition: all 0.4s ease;
+    position: relative;
+    bottom: -86%;
+    right: -20.2%;
+    z-index: 3;
 }
 
 .bar:hover {
     background: rgb(255, 255, 255);
 }
 
-/* #r1:checked ~ .d1,
+.back {
+    position: relative;
+    bottom: -85%;
+    right: -15.5%;
+    width: 120px;
+    height: 60px;
+     background-color: rgb(93, 31, 90); 
+
+}
+
+
+#r1:checked ~ .d1,
 #r2:checked ~ .d2,
 #r3:checked ~ .d3,
 #r4:checked ~ .d4 {
     background: rgba(0, 0, 0, 0);
     border: 1px solid white;
-}  */
+} 
 
 
-.s1  {
-    margin-left: -75%;
-        /* margin-left: -25%; */
-}
 #r1:checked ~ .s1 {
-    margin-left: 0;
+    margin-left: -248px;
 }
 
 #r2:checked ~ .s1 {
-    margin-left: -25%;
+    margin-left: calc(-25% - 128px - 120px);
 }
 #r3:checked ~ .s1 {
-    margin-left: -50%;
+    margin-left:  calc(-50% - 128px - 120px);
 }
 #r4:checked ~ .s1 {
-    margin-left: -75%;
+    margin-left: calc(-75% - 128px - 120px);
 }
-
-
-
 
 
 input {
@@ -145,5 +160,4 @@ input {
     visibility: hidden;
     }
 
-
-  
+   
