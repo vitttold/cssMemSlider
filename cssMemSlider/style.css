@@ -15,11 +15,11 @@ body {
 .slider {
     display: flex;
     flex-direction: column;
-    width: 650px;
-    height: 590px;
-    /* overflow-x: hidden;
-    scroll-behavior: smooth; */
-    overflow: hidden;
+    /* width: 650px; */
+    width: 90%;
+    max-width: 650px;
+    /* height: 590px; */
+        overflow: hidden;
 }
 .slides {
     display: flex;
@@ -71,27 +71,14 @@ h3 {
 }
 
 
-/* @media (max-width: 620px) {
-    .bottom-block {
-        flex-direction: column-reverse;
-        justify-content: left;
-    }
-
-    .dots {
-        width: 100%;
-        justify-content: center;
-        margin-top: 12px;
-    } */
-/* } */
 
 
 a {
     padding: 10px;
-    /* background-color: yellowgreen; */
 }
 
 
-.buttons {
+/* .buttons {
     display: flex;
     position: relative;
     top: -125px;
@@ -99,7 +86,7 @@ a {
     background-color: rgb(93, 31, 90);
     padding: 25px 0 50px 0 ;
     z-index: 1;
-}
+} */
 
 
 .bar {
@@ -111,9 +98,35 @@ a {
     margin: 10px;
     transition: all 0.4s ease;
     position: relative;
-    bottom: -86%;
+    bottom: -89%;
     right: -20.2%;
     z-index: 3;
+}
+
+@media (max-width: 700px) {
+    h3 {
+      width: 100%;
+    padding-top: 40px;
+    }
+
+    .bar {
+    bottom: -84.5%;
+    right: -10%;
+    }
+}
+
+@media (max-width: 555px) {
+    .bar {
+        bottom: -76.5%;
+        right: -10%;
+   }
+}
+
+@media (max-width: 400px) {
+     .bar {
+    bottom: -68%;
+    right: -7%;
+    }
 }
 
 .bar:hover {
@@ -129,6 +142,8 @@ a {
      background-color: rgb(93, 31, 90); 
 
 }
+
+
 
 
 #r1:checked ~ .d1,
