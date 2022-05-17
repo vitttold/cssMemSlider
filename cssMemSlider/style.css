@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    background-color: rgb(93, 31, 90);
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 650px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide {
+    width: 25%;
+    transition: all 0.4s ease;
+}
+
+.slide img {
+    width: 100%;
+    position: relative;
+    border: 2px solid rgb(223, 190, 99);
+    z-index: 2;
+}
+
+h3 {
+    width: 75%;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    padding-left: 2px;
+    z-index: -1;
+}
+
+.bottom-block {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+a {
+    padding: 10px;
+}
+
+
+
+.bar {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(223, 190, 99);
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.4s ease;
+    position: relative;
+    bottom: -88.5%;
+    right: -20.2%;
+    z-index: 3;
+}
+
+.bar:hover {
+    background: rgb(255, 255, 255);
+}
+
+.back {
+    position: relative;
+    bottom: -85%;
+    right: -15.5%;
+    width: 120px;
+    height: 70px;
+    background-color: rgb(93, 31, 90);
+}
+
+#r1:checked~.d1, 
+#r2:checked~.d2, 
+#r3:checked~.d3, 
+#r4:checked~.d4 {
+    background: rgba(0, 0, 0, 0);
+    border: 1.5px solid rgb(223, 190, 99);
+}
+
+#r1:checked~.d1:hover, 
+#r2:checked~.d2:hover, 
+#r3:checked~.d3:hover, 
+#r4:checked~.d4:hover {
+    background: rgba(0, 0, 0, 0);
+    border: 1.5px solid white;
+}
+
+#r1:checked~.s1 {
+    margin-left: -248px;
+}
+
+#r2:checked~.s1 {
+    margin-left: calc(-25% - 128px - 120px);
+}
+
+#r3:checked~.s1 {
+    margin-left: calc(-50% - 128px - 120px);
+}
+
+#r4:checked~.s1 {
+    margin-left: calc(-75% - 128px - 120px);
+}
+
+input {
+    position: fixed;
+    visibility: hidden;
+}
+
+@media (max-width: 700px) {
+    h3 {
+        width: 100%;
+        padding-top: 40px;
+    }
+    .bar {
+        bottom: -84.5%;
+        right: -10%;
+    }
+}
+
+@media (max-width: 555px) {
+    .bar {
+        bottom: -76.5%;
+        right: -10%;
+    }
+}
+
+@media (max-width: 400px) {
+    .bar {
+        bottom: -68%;
+        right: -7%;
+    }
+}
